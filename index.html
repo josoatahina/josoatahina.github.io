@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Raobelina Josoa Tahina, développeur web full stack. PHP, JavaScript, MySQL, intégrations e-commerce." />
+  <meta name="theme-color" content="#0e0e0e" />
+  <title>Josoa Tahina — Développeur Web Full Stack</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#work" class="skip-link">Aller au contenu</a>
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="brand-glyph">✳</span>
+        <span class="brand-name">Josoa<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navigation principale">
+        <a href="#about" data-nav>
+          <span class="num">01</span>
+          <span>À propos</span>
+        </a>
+        <a href="#work" data-nav>
+          <span class="num">02</span>
+          <span>Travaux</span>
+        </a>
+        <a href="#stack" data-nav>
+          <span class="num">03</span>
+          <span>Stack</span>
+        </a>
+        <a href="#contact" data-nav>
+          <span class="num">04</span>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Basculer clair / sombre">
+          <span class="theme-track">
+            <span class="theme-thumb"></span>
+          </span>
+          <span class="theme-label sun">Clair</span>
+          <span class="theme-label moon">Sombre</span>
+        </button>
+
+        <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#about" data-nav><span class="num">01</span> À propos</a>
+      <a href="#work" data-nav><span class="num">02</span> Travaux</a>
+      <a href="#stack" data-nav><span class="num">03</span> Stack</a>
+      <a href="#contact" data-nav><span class="num">04</span> Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================================================================
+         HERO
+         ================================================================ -->
+    <section class="hero">
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span>Disponible pour de nouvelles missions · 2026</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line" data-split>
+          <span class="word">Josoa</span>
+          <span class="word italic">Tahina</span>
+        </span>
+        <span class="title-line small" data-split>
+          <span class="word">Full stack</span>
+          <span class="word">web</span>
+          <span class="word italic accent">developer</span>
+          <span class="word">/</span>
+          <span class="word">basé à</span>
+          <span class="word italic">Antananarivo</span>
+        </span>
+      </h1>
+
+      <div class="hero-meta">
+        <div class="hero-lead">
+          <p>
+            Je conçois et développe des <em>applications web</em> pensées pour durer :
+            architecture claire, code lisible, interfaces sobres. Actuellement je fais
+            tourner à l'échelle une plateforme e-commerce B2B multi-marques.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">
+            <span>Voir les travaux</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="mailto:josoa@achatmat.com" class="btn btn-link">
+            <span>josoa@achatmat.com</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-corner">
+        <div class="corner-item">
+          <span class="corner-label">Année</span>
+          <span class="corner-value">2026</span>
+        </div>
+        <div class="corner-item">
+          <span class="corner-label">Focus</span>
+          <span class="corner-value">PHP · JS</span>
+        </div>
+        <div class="corner-item">
+          <span class="corner-label">Rôle</span>
+          <span class="corner-value">Full stack</span>
+        </div>
+      </div>
+
+      <a href="#marquee" class="scroll-cue" aria-label="Défiler">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ================================================================
+         MARQUEE
+         ================================================================ -->
+    <section class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>PHP 8.2</span><span class="star">✳</span>
+          <span>MySQL</span><span class="star">✳</span>
+          <span>JavaScript</span><span class="star">✳</span>
+          <span>Twig</span><span class="star">✳</span>
+          <span>REST API</span><span class="star">✳</span>
+          <span>Symfony Console</span><span class="star">✳</span>
+          <span>Git</span><span class="star">✳</span>
+          <span>HTML / CSS</span><span class="star">✳</span>
+          <span>Docker</span><span class="star">✳</span>
+          <span>SOLID</span><span class="star">✳</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>PHP 8.2</span><span class="star">✳</span>
+          <span>MySQL</span><span class="star">✳</span>
+          <span>JavaScript</span><span class="star">✳</span>
+          <span>Twig</span><span class="star">✳</span>
+          <span>REST API</span><span class="star">✳</span>
+          <span>Symfony Console</span><span class="star">✳</span>
+          <span>Git</span><span class="star">✳</span>
+          <span>HTML / CSS</span><span class="star">✳</span>
+          <span>Docker</span><span class="star">✳</span>
+          <span>SOLID</span><span class="star">✳</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT
+         ================================================================ -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <span class="section-label">À propos</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-quote">
+          <p class="quote">
+            <span class="quote-mark">"</span>Le meilleur code est celui qu'un autre développeur peut lire dans six mois sans avoir besoin de m'appeler.<span class="quote-mark">"</span>
+          </p>
+        </div>
+
+        <div class="about-body">
+          <p class="about-lead">
+            Je m'appelle <strong>Raobelina Josoa Tahina</strong>. Développeur web depuis
+            plusieurs années, je travaille aujourd'hui sur une plateforme e-commerce B2B
+            multi-marques utilisée quotidiennement pour traiter des milliers de commandes.
+          </p>
+
+          <p>
+            J'interviens sur toute la chaîne : modélisation métier, requêtes SQL performantes,
+            interfaces d'administration, intégrations à des services externes
+            (comptabilité, transporteurs, paiements) et automatisations en ligne de commande.
+          </p>
+
+          <p>
+            Ce qui me guide : un code <em>lisible</em> avant d'être malin, des interfaces
+            que l'utilisateur comprend en trois secondes, et des systèmes qui restent
+            confortables à faire évoluer six mois plus tard.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">années à coder</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">modules livrés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="100">0</span><span class="stat-percent">%</span>
+              <span class="stat-label">livrés en prod</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         WORK / PROJETS
+         ================================================================ -->
+    <section class="section section-work" id="work">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <span class="section-label">Travaux sélectionnés</span>
+        <span class="section-year">— 2023 / 2026</span>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-item work-featured">
+          <div class="work-visual">
+            <div class="work-graphic graphic-crossdock">
+              <div class="grid-lines"></div>
+              <div class="graphic-content">
+                <div class="graphic-truck">
+                  <div class="truck-container"></div>
+                  <div class="truck-container"></div>
+                  <div class="truck-container filled"></div>
+                </div>
+                <div class="graphic-gauge">
+                  <div class="gauge-fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-year">2025</span>
+              <span class="work-type">Logistique · E-commerce</span>
+            </div>
+            <h3 class="work-title">Module Cross-Docking</h3>
+            <p class="work-desc">
+              Système complet de gestion des approvisionnements en flux tendu : sélection
+              des commandes, constitution automatique des camions, notifications
+              transporteurs, jauge de remplissage temps réel.
+            </p>
+            <ul class="work-tags">
+              <li>PHP 8.2</li><li>MySQL</li><li>JavaScript</li><li>Twig</li><li>PDF</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <div class="work-visual">
+            <div class="work-graphic graphic-pennylane">
+              <div class="graphic-flow">
+                <div class="flow-node">A</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node">B</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node accent">€</div>
+              </div>
+              <div class="flow-lines"></div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-year">2024</span>
+              <span class="work-type">Intégration</span>
+            </div>
+            <h3 class="work-title">Pennylane</h3>
+            <p class="work-desc">
+              Synchronisation bidirectionnelle des factures, clients et rapprochements
+              bancaires. Architecture DTO / Mapper / Gateway testable et extensible.
+            </p>
+            <ul class="work-tags">
+              <li>REST API</li><li>SOLID</li><li>CLI</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <div class="work-visual">
+            <div class="work-graphic graphic-adv">
+              <div class="graphic-bars">
+                <div class="bar" style="--h: 40%"></div>
+                <div class="bar" style="--h: 75%"></div>
+                <div class="bar" style="--h: 55%"></div>
+                <div class="bar accent" style="--h: 90%"></div>
+                <div class="bar" style="--h: 65%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-year">2024</span>
+              <span class="work-type">Dashboard</span>
+            </div>
+            <h3 class="work-title">Tour de contrôle ADV</h3>
+            <p class="work-desc">
+              Dashboard temps réel pour l'administration des ventes. KPIs, alertes
+              automatiques, suivi des retards, communication client centralisée.
+            </p>
+            <ul class="work-tags">
+              <li>PHP</li><li>WebSocket</li><li>JS</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <div class="work-visual">
+            <div class="work-graphic graphic-messaging">
+              <div class="graphic-mail">
+                <div class="mail-line"></div>
+                <div class="mail-line short"></div>
+                <div class="mail-line"></div>
+                <div class="mail-line short"></div>
+              </div>
+              <div class="mail-arrow">↗</div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-year">2023</span>
+              <span class="work-type">Communications</span>
+            </div>
+            <h3 class="work-title">Module Messaging</h3>
+            <p class="work-desc">
+              Éditeur de templates d'e-mails transactionnels, moteur d'envoi asynchrone,
+              variables métier et prévisualisation live pour les non-techniques.
+            </p>
+            <ul class="work-tags">
+              <li>PHP</li><li>Twig</li><li>SMTP</li><li>Cron</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         APPROACH
+         ================================================================ -->
+    <section class="section section-approach">
+      <div class="section-head">
+        <span class="section-num">→</span>
+        <span class="section-label">Approche</span>
+      </div>
+
+      <div class="approach-grid">
+        <div class="approach-item">
+          <span class="approach-num">01</span>
+          <h3>Comprendre</h3>
+          <p>Écouter le besoin réel derrière la demande initiale. Poser les questions inconfortables tôt.</p>
+        </div>
+        <div class="approach-item">
+          <span class="approach-num">02</span>
+          <h3>Concevoir</h3>
+          <p>Un croquis avant du code. Choisir la solution la plus simple qui tient sur douze mois.</p>
+        </div>
+        <div class="approach-item">
+          <span class="approach-num">03</span>
+          <h3>Construire</h3>
+          <p>Petits incréments, testables, livrables. Le code de production dès le premier jour.</p>
+        </div>
+        <div class="approach-item">
+          <span class="approach-num">04</span>
+          <h3>Livrer</h3>
+          <p>Documenter, transmettre, améliorer. La qualité se voit six mois après, pas au commit initial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         STACK
+         ================================================================ -->
+    <section class="section section-stack" id="stack">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <span class="section-label">Stack technique</span>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-col">
+          <h3 class="stack-title"><span class="dash">—</span> Back-end</h3>
+          <ul class="stack-list">
+            <li><span>PHP 8.2</span><span class="dot">•</span><span class="em">Types stricts, readonly, enums</span></li>
+            <li><span>MySQL</span><span class="dot">•</span><span class="em">Optimisation, indexation</span></li>
+            <li><span>Symfony Console</span><span class="dot">•</span><span class="em">CLI et automatisations</span></li>
+            <li><span>REST API</span><span class="dot">•</span><span class="em">JWT, versioning</span></li>
+            <li><span>SOLID</span><span class="dot">•</span><span class="em">DTO / Mapper / Gateway</span></li>
+          </ul>
+        </div>
+
+        <div class="stack-col">
+          <h3 class="stack-title"><span class="dash">—</span> Front-end</h3>
+          <ul class="stack-list">
+            <li><span>HTML5</span><span class="dot">•</span><span class="em">Sémantique, accessibilité</span></li>
+            <li><span>CSS3</span><span class="dot">•</span><span class="em">Grid, Flexbox, animations</span></li>
+            <li><span>JavaScript</span><span class="dot">•</span><span class="em">ES2022+, vanilla, DOM APIs</span></li>
+            <li><span>Twig 3.x</span><span class="dot">•</span><span class="em">Templating multi-marques</span></li>
+            <li><span>Responsive</span><span class="dot">•</span><span class="em">Mobile-first, a11y</span></li>
+          </ul>
+        </div>
+
+        <div class="stack-col">
+          <h3 class="stack-title"><span class="dash">—</span> Outils</h3>
+          <ul class="stack-list">
+            <li><span>Git</span><span class="dot">•</span><span class="em">Branching, code review</span></li>
+            <li><span>Docker</span><span class="dot">•</span><span class="em">Environnements dev</span></li>
+            <li><span>Composer</span><span class="dot">•</span><span class="em">PSR-4, gestion deps</span></li>
+            <li><span>VS Code · PhpStorm</span><span class="dot">•</span><span class="em">Éditeurs quotidiens</span></li>
+            <li><span>Ligne de commande</span><span class="dot">•</span><span class="em">Linux, bash, cron</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         EXPERIENCE
+         ================================================================ -->
+    <section class="section section-experience">
+      <div class="section-head">
+        <span class="section-num">→</span>
+        <span class="section-label">Parcours</span>
+      </div>
+
+      <div class="xp-list">
+        <article class="xp-item">
+          <div class="xp-year">2023 —<br />Aujourd'hui</div>
+          <div class="xp-body">
+            <h3>Développeur Web Full Stack</h3>
+            <p class="xp-org">Achatmat / Logidev — Plateforme LUCILLE</p>
+            <p>
+              Développement d'une plateforme e-commerce B2B multi-marques. Conception
+              de modules métier (cross-docking, comptabilité, ADV, communications),
+              intégrations tierces, optimisations SQL et refactoring PHP progressif.
+            </p>
+          </div>
+        </article>
+
+        <article class="xp-item">
+          <div class="xp-year">2020 —<br />2023</div>
+          <div class="xp-body">
+            <h3>Formation supérieure en informatique</h3>
+            <p class="xp-org">Enseignement supérieur</p>
+            <p>
+              Fondamentaux du génie logiciel, algorithmique, bases de données,
+              programmation orientée objet, réseaux et architectures web.
+            </p>
+          </div>
+        </article>
+
+        <article class="xp-item">
+          <div class="xp-year">En<br />continu</div>
+          <div class="xp-body">
+            <h3>Auto-formation</h3>
+            <p class="xp-org">Documentation, open source, veille</p>
+            <p>
+              Lecture régulière des RFC PHP, articles techniques sur les patterns
+              modernes, exploration de projets open source pour comprendre les
+              choix d'architecture.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT
+         ================================================================ -->
+    <section class="section section-contact" id="contact">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <span class="section-label">Prendre contact</span>
+      </div>
+
+      <div class="contact-block">
+        <p class="contact-eyebrow">
+          <span class="status-dot"></span>
+          Disponible pour de nouvelles missions
+        </p>
+
+        <h2 class="contact-headline">
+          Construisons<br />
+          <em>quelque chose</em><br />
+          <span class="accent">ensemble.</span>
+        </h2>
+
+        <a href="mailto:josoa@achatmat.com" class="contact-mail">
+          <span>josoa@achatmat.com</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <div class="contact-links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <span class="mono">01</span>
+            <span>GitHub</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <span class="mono">02</span>
+            <span>LinkedIn</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="cv.pdf" download>
+            <span class="mono">03</span>
+            <span>Télécharger le CV</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <p class="footer-with-glyph">Raobelina Josoa Tahina<br />Développeur Web Full Stack</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Localisation</p>
+        <p>Antananarivo, Madagascar</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Contact</p>
+        <a href="mailto:josoa@achatmat.com">josoa@achatmat.com</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">© <span id="year"></span></p>
+        <p>Conçu et développé sans framework.<br />HTML · CSS · JS vanilla.</p>
+      </div>
+    </div>
+
+    <div class="footer-mega" aria-hidden="true">JOSOA</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
