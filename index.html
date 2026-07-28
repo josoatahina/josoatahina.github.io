@@ -7,11 +7,14 @@
   <meta name="theme-color" content="#0e0e0e" />
   <title>Josoa Tahina — Développeur Web Full Stack</title>
 
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.svg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=1.0" />
 </head>
 <body>
 
@@ -76,7 +79,7 @@
     <section class="hero">
       <div class="hero-status">
         <span class="status-dot"></span>
-        <span>Disponible pour de nouvelles missions · 2026</span>
+        <span>Disponible pour de nouvelles missions · <span class="current-year">-</span></span>
       </div>
 
       <h1 class="hero-title">
@@ -85,8 +88,8 @@
           <span class="word italic">Tahina</span>
         </span>
         <span class="title-line small" data-split>
-          <span class="word">Full stack</span>
-          <span class="word">web</span>
+          <span class="word">Backend</span>
+          <span class="word">PHP</span>
           <span class="word italic accent">developer</span>
           <span class="word">/</span>
           <span class="word">basé à</span>
@@ -97,9 +100,11 @@
       <div class="hero-meta">
         <div class="hero-lead">
           <p>
-            Je conçois et développe des <em>applications web</em> pensées pour durer :
-            architecture claire, code lisible, interfaces sobres. Actuellement je fais
-            tourner à l'échelle une plateforme e-commerce B2B multi-marques.
+            Développeur <em>web</em> full stack, je conçois et fais évoluer des
+            applications métier depuis cinq ans. Aujourd'hui, je travaille sur une
+            plateforme e-commerce B2B multi-marques : modules back-office,
+            intégrations à des services externes et automatisations pour libérer les
+            équipes des tâches répétitives.
           </p>
         </div>
 
@@ -108,8 +113,8 @@
             <span>Voir les travaux</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="mailto:josoa@achatmat.com" class="btn btn-link">
-            <span>josoa@achatmat.com</span>
+          <a href="mailto:jt.raobelina@gmail.com" class="btn btn-link">
+            <span>jt.raobelina@gmail.com</span>
           </a>
         </div>
       </div>
@@ -117,7 +122,7 @@
       <div class="hero-corner">
         <div class="corner-item">
           <span class="corner-label">Année</span>
-          <span class="corner-value">2026</span>
+          <span class="corner-value"><span class="current-year">-</span></span>
         </div>
         <div class="corner-item">
           <span class="corner-label">Focus</span>
@@ -125,7 +130,7 @@
         </div>
         <div class="corner-item">
           <span class="corner-label">Rôle</span>
-          <span class="corner-value">Full stack</span>
+          <span class="corner-value">Backend PHP</span>
         </div>
       </div>
 
@@ -146,23 +151,19 @@
           <span>JavaScript</span><span class="star">✳</span>
           <span>Twig</span><span class="star">✳</span>
           <span>REST API</span><span class="star">✳</span>
-          <span>Symfony Console</span><span class="star">✳</span>
           <span>Git</span><span class="star">✳</span>
           <span>HTML / CSS</span><span class="star">✳</span>
-          <span>Docker</span><span class="star">✳</span>
-          <span>SOLID</span><span class="star">✳</span>
+          <span>Wordpress</span><span class="star">✳</span>
         </div>
-        <div class="marquee-content" aria-hidden="true">
+        <div class="marquee-content">
           <span>PHP 8.2</span><span class="star">✳</span>
           <span>MySQL</span><span class="star">✳</span>
           <span>JavaScript</span><span class="star">✳</span>
           <span>Twig</span><span class="star">✳</span>
           <span>REST API</span><span class="star">✳</span>
-          <span>Symfony Console</span><span class="star">✳</span>
           <span>Git</span><span class="star">✳</span>
           <span>HTML / CSS</span><span class="star">✳</span>
-          <span>Docker</span><span class="star">✳</span>
-          <span>SOLID</span><span class="star">✳</span>
+          <span>Wordpress</span><span class="star">✳</span>
         </div>
       </div>
     </section>
@@ -185,30 +186,33 @@
 
         <div class="about-body">
           <p class="about-lead">
-            Je m'appelle <strong>Raobelina Josoa Tahina</strong>. Développeur web depuis
-            plusieurs années, je travaille aujourd'hui sur une plateforme e-commerce B2B
-            multi-marques utilisée quotidiennement pour traiter des milliers de commandes.
+            Je m'appelle <strong>Raobelina Josoa Tahina</strong> (Josoa pour aller plus
+            vite). Développeur web depuis cinq ans, je travaille depuis 2023 sur
+            LUCILLE, une plateforme e-commerce B2B multi-marques qui traite des
+            centaines de commandes chaque jour.
           </p>
 
           <p>
-            J'interviens sur toute la chaîne : modélisation métier, requêtes SQL performantes,
-            interfaces d'administration, intégrations à des services externes
-            (comptabilité, transporteurs, paiements) et automatisations en ligne de commande.
+            Mon travail couvre l'ensemble de la chaîne technique : modélisation des
+            données, requêtes SQL, interfaces d'administration pour l'équipe interne,
+            intégrations à des services externes (fidélisation, paiements, veille
+            tarifaire concurrente) et scripts nocturnes pour les traitements les plus
+            lourds.
           </p>
 
           <p>
-            Ce qui me guide : un code <em>lisible</em> avant d'être malin, des interfaces
-            que l'utilisateur comprend en trois secondes, et des systèmes qui restent
-            confortables à faire évoluer six mois plus tard.
+            Deux priorités guident mon travail : un code que je pourrai <em>relire</em>
+            dans six mois sans le regretter, et des interfaces où l'utilisateur ne se
+            demande jamais où cliquer. Tout le reste en découle.
           </p>
 
           <div class="about-stats">
             <div class="stat">
-              <span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span>
+              <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
               <span class="stat-label">années à coder</span>
             </div>
             <div class="stat">
-              <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
               <span class="stat-label">modules livrés</span>
             </div>
             <div class="stat">
@@ -227,7 +231,7 @@
       <div class="section-head">
         <span class="section-num">02</span>
         <span class="section-label">Travaux sélectionnés</span>
-        <span class="section-year">— 2023 / 2026</span>
+        <span class="section-year">— 2021 / <span class="current-year">-</span></span>
       </div>
 
       <div class="work-grid">
@@ -249,46 +253,19 @@
           </div>
           <div class="work-info">
             <div class="work-meta">
-              <span class="work-year">2025</span>
+              <span class="work-year">2026</span>
               <span class="work-type">Logistique · E-commerce</span>
             </div>
             <h3 class="work-title">Module Cross-Docking</h3>
             <p class="work-desc">
-              Système complet de gestion des approvisionnements en flux tendu : sélection
-              des commandes, constitution automatique des camions, notifications
-              transporteurs, jauge de remplissage temps réel.
+              Module de gestion des remontées de marchandises fournisseurs, destiné
+              à l'équipe achats. Sélection des commandes concernées, constitution
+              progressive des camions, jauge de remplissage en temps réel et
+              notification automatique du transporteur à la validation de chaque
+              expédition.
             </p>
             <ul class="work-tags">
-              <li>PHP 8.2</li><li>MySQL</li><li>JavaScript</li><li>Twig</li><li>PDF</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-visual">
-            <div class="work-graphic graphic-pennylane">
-              <div class="graphic-flow">
-                <div class="flow-node">A</div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-node">B</div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-node accent">€</div>
-              </div>
-              <div class="flow-lines"></div>
-            </div>
-          </div>
-          <div class="work-info">
-            <div class="work-meta">
-              <span class="work-year">2024</span>
-              <span class="work-type">Intégration</span>
-            </div>
-            <h3 class="work-title">Pennylane</h3>
-            <p class="work-desc">
-              Synchronisation bidirectionnelle des factures, clients et rapprochements
-              bancaires. Architecture DTO / Mapper / Gateway testable et extensible.
-            </p>
-            <ul class="work-tags">
-              <li>REST API</li><li>SOLID</li><li>CLI</li>
+              <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Ajax</li><li>Mail</li>
             </ul>
           </div>
         </article>
@@ -307,44 +284,183 @@
           </div>
           <div class="work-info">
             <div class="work-meta">
-              <span class="work-year">2024</span>
-              <span class="work-type">Dashboard</span>
+              <span class="work-year">2025 - 2026</span>
+              <span class="work-type">Pilotage · Analytique</span>
             </div>
-            <h3 class="work-title">Tour de contrôle ADV</h3>
+            <h3 class="work-title">Suite de tableaux de bord</h3>
             <p class="work-desc">
-              Dashboard temps réel pour l'administration des ventes. KPIs, alertes
-              automatiques, suivi des retards, communication client centralisée.
+              Cinq tableaux de bord dédiés à chaque métier : Commerce, Marketing,
+              ADV, Performances du site et Contrôle de gestion. Chacun agrège les
+              indicateurs pertinents pour son équipe (objectifs comparés à l'année
+              précédente, marges par catégorie, retards de livraison, évolution des
+              prix concurrents, etc.) et remonte les alertes correspondantes.
             </p>
             <ul class="work-tags">
-              <li>PHP</li><li>WebSocket</li><li>JS</li>
+              <li>PHP</li><li>MySQL</li><li>jQuery</li><li>Ajax</li>
             </ul>
           </div>
         </article>
 
         <article class="work-item">
           <div class="work-visual">
-            <div class="work-graphic graphic-messaging">
-              <div class="graphic-mail">
-                <div class="mail-line"></div>
-                <div class="mail-line short"></div>
-                <div class="mail-line"></div>
-                <div class="mail-line short"></div>
+            <div class="work-graphic graphic-tasks">
+              <div class="task-list">
+                <div class="task-row done">
+                  <span class="task-check"></span>
+                  <span class="task-line"></span>
+                  <span class="task-badge">Fait</span>
+                </div>
+                <div class="task-row active">
+                  <span class="task-check"></span>
+                  <span class="task-line"></span>
+                  <span class="task-bell" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                  </span>
+                </div>
+                <div class="task-row">
+                  <span class="task-check"></span>
+                  <span class="task-line short"></span>
+                  <span class="task-badge muted">À faire</span>
+                </div>
               </div>
-              <div class="mail-arrow">↗</div>
             </div>
           </div>
           <div class="work-info">
             <div class="work-meta">
-              <span class="work-year">2023</span>
-              <span class="work-type">Communications</span>
+              <span class="work-year">2025</span>
+              <span class="work-type">Productivité · Collaboration</span>
             </div>
-            <h3 class="work-title">Module Messaging</h3>
+            <h3 class="work-title">Module Tâches (Task Manager)</h3>
             <p class="work-desc">
-              Éditeur de templates d'e-mails transactionnels, moteur d'envoi asynchrone,
-              variables métier et prévisualisation live pour les non-techniques.
+              Gestionnaire de tâches destiné à l'équipe commerciale. Chaque tâche
+              évolue selon plusieurs statuts, peut être assignée à un collègue, et
+              déclenche une notification quelques minutes avant l'échéance pour
+              éviter les oublis.
             </p>
             <ul class="work-tags">
-              <li>PHP</li><li>Twig</li><li>SMTP</li><li>Cron</li>
+              <li>PHP</li><li>MySQL</li><li>WebSocket</li><li>Cron</li><li>jQuery</li><li>Ajax</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <div class="work-visual">
+            <div class="work-graphic graphic-agenda">
+              <div class="cal-block">
+                <div class="cal-header">
+                  <span class="cal-label">Outlook</span>
+                  <span class="cal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+                <div class="cal-grid">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span class="cal-cell active"></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="cal-sync" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"/><path d="M21 7H8"/><path d="M7 21l-4-4 4-4"/><path d="M3 17h13"/></svg>
+              </div>
+              <div class="cal-block">
+                <div class="cal-header">
+                  <span class="cal-label">Interne</span>
+                  <span class="cal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+                <div class="cal-grid">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span class="cal-cell active"></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-year">2025</span>
+              <span class="work-type">Synchronisation</span>
+            </div>
+            <h3 class="work-title">Module Agenda</h3>
+            <p class="work-desc">
+              Synchronisation dans les deux sens entre Outlook et un agenda interne
+              personnalisé. Tout événement créé d'un côté est répliqué automatiquement
+              dans l'autre, avec gestion complète des conflits (modifications
+              simultanées, événement supprimé d'un côté et modifié de l'autre).
+            </p>
+            <ul class="work-tags">
+              <li>PHP</li><li>MySQL</li><li>jQuery</li><li>Ajax</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <div class="work-visual">
+            <div class="work-graphic graphic-payments">
+              <div class="pay-stack">
+                <div class="pay-card">
+                  <span class="pay-chip"></span>
+                  <span class="pay-line"></span>
+                  <span class="pay-line short"></span>
+                </div>
+                <div class="pay-card">
+                  <span class="pay-chip"></span>
+                  <span class="pay-line"></span>
+                  <span class="pay-line short"></span>
+                </div>
+                <div class="pay-card accent">
+                  <span class="pay-chip"></span>
+                  <span class="pay-line"></span>
+                  <span class="pay-line short"></span>
+                  <span class="pay-check" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-year">2024 - 2025</span>
+              <span class="work-type">Paiement · Fidélisation</span>
+            </div>
+            <h3 class="work-title">Intégrations paiement & fidélité</h3>
+            <p class="work-desc">
+              Intégration de plusieurs prestataires de paiement (Hokodo, Mollie,
+              Franfinance) au tunnel de commande, avec gestion complète du cycle
+              transactionnel (autorisation, encaissement, remboursement) via API et
+              webhooks. Développement en parallèle d'un programme de fidélité
+              connecté à Avomark : cumul de points, règles d'attribution
+              personnalisées et synchronisation des soldes client en temps réel.
+            </p>
+            <ul class="work-tags">
+              <li>PHP</li><li>MySQL</li><li>API</li><li>Webhook</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item work-more">
+          <div class="work-visual work-more-visual">
+            <div class="work-more-grid" aria-hidden="true">
+              <span>✳</span><span>✳</span><span>✳</span>
+              <span>✳</span><span class="accent">✳</span><span>✳</span>
+              <span>✳</span><span>✳</span><span>✳</span>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-meta">
+              <span class="work-year">← 2023</span>
+              <span class="work-type">Autres travaux · Freelance</span>
+            </div>
+            <h3 class="work-title">Autres réalisations sur mesure</h3>
+            <p class="work-desc">
+              Avant de rejoindre l'e-commerce B2B, j'ai livré plusieurs projets pour
+              des TPE et petites structures : sites vitrines et back-offices sur
+              mesure en PHP natif, sites WordPress avec WooCommerce pour la partie
+              vente en ligne, souvent accompagnés d'une optimisation SEO et d'une
+              formation à l'administration pour rendre le client autonome après la
+              livraison. Ces réalisations ne sont pas détaillées ici mais peuvent
+              être présentées sur demande.
+            </p>
+            <ul class="work-tags">
+              <li>PHP</li><li>MySQL</li><li>WordPress</li><li>WooCommerce</li><li>jQuery</li><li>Ajax</li>
             </ul>
           </div>
         </article>
@@ -364,22 +480,22 @@
         <div class="approach-item">
           <span class="approach-num">01</span>
           <h3>Comprendre</h3>
-          <p>Écouter le besoin réel derrière la demande initiale. Poser les questions inconfortables tôt.</p>
+          <p>Écouter la demande initiale, puis creuser jusqu'au besoin réel qui se cache derrière. Les deux ne se recoupent que rarement complètement.</p>
         </div>
         <div class="approach-item">
           <span class="approach-num">02</span>
           <h3>Concevoir</h3>
-          <p>Un croquis avant du code. Choisir la solution la plus simple qui tient sur douze mois.</p>
+          <p>Poser les grandes lignes sur papier avant d'ouvrir l'éditeur. Retenir la solution la plus simple qui tiendra dans un an, plutôt que celle qui paraîtra la plus astucieuse aujourd'hui.</p>
         </div>
         <div class="approach-item">
           <span class="approach-num">03</span>
           <h3>Construire</h3>
-          <p>Petits incréments, testables, livrables. Le code de production dès le premier jour.</p>
+          <p>Livrer par petits incréments, dès la première semaine si possible. C'est le meilleur moyen d'ajuster tôt et d'éviter les mauvaises surprises en fin de projet.</p>
         </div>
         <div class="approach-item">
           <span class="approach-num">04</span>
           <h3>Livrer</h3>
-          <p>Documenter, transmettre, améliorer. La qualité se voit six mois après, pas au commit initial.</p>
+          <p>Documenter, transmettre à la personne qui prendra la suite, prévoir des points d'entrée pour les évolutions futures. La vraie qualité se mesure six mois après la mise en production.</p>
         </div>
       </div>
     </section>
@@ -397,21 +513,19 @@
         <div class="stack-col">
           <h3 class="stack-title"><span class="dash">—</span> Back-end</h3>
           <ul class="stack-list">
-            <li><span>PHP 8.2</span><span class="dot">•</span><span class="em">Types stricts, readonly, enums</span></li>
+            <li><span>PHP 8</span><span class="dot">•</span><span class="em">Types stricts, readonly, enums</span></li>
             <li><span>MySQL</span><span class="dot">•</span><span class="em">Optimisation, indexation</span></li>
-            <li><span>Symfony Console</span><span class="dot">•</span><span class="em">CLI et automatisations</span></li>
             <li><span>REST API</span><span class="dot">•</span><span class="em">JWT, versioning</span></li>
-            <li><span>SOLID</span><span class="dot">•</span><span class="em">DTO / Mapper / Gateway</span></li>
           </ul>
         </div>
 
         <div class="stack-col">
           <h3 class="stack-title"><span class="dash">—</span> Front-end</h3>
           <ul class="stack-list">
-            <li><span>HTML5</span><span class="dot">•</span><span class="em">Sémantique, accessibilité</span></li>
+            <li><span>HTML</span><span class="dot">•</span><span class="em">Sémantique, accessibilité</span></li>
             <li><span>CSS3</span><span class="dot">•</span><span class="em">Grid, Flexbox, animations</span></li>
             <li><span>JavaScript</span><span class="dot">•</span><span class="em">ES2022+, vanilla, DOM APIs</span></li>
-            <li><span>Twig 3.x</span><span class="dot">•</span><span class="em">Templating multi-marques</span></li>
+            <li><span>Twig</span><span class="dot">•</span><span class="em">Templating multi-marques</span></li>
             <li><span>Responsive</span><span class="dot">•</span><span class="em">Mobile-first, a11y</span></li>
           </ul>
         </div>
@@ -420,9 +534,8 @@
           <h3 class="stack-title"><span class="dash">—</span> Outils</h3>
           <ul class="stack-list">
             <li><span>Git</span><span class="dot">•</span><span class="em">Branching, code review</span></li>
-            <li><span>Docker</span><span class="dot">•</span><span class="em">Environnements dev</span></li>
             <li><span>Composer</span><span class="dot">•</span><span class="em">PSR-4, gestion deps</span></li>
-            <li><span>VS Code · PhpStorm</span><span class="dot">•</span><span class="em">Éditeurs quotidiens</span></li>
+            <li><span>Sublime Text</span><span class="dot">•</span><span class="em">Éditeurs quotidiens</span></li>
             <li><span>Ligne de commande</span><span class="dot">•</span><span class="em">Linux, bash, cron</span></li>
           </ul>
         </div>
@@ -440,39 +553,43 @@
 
       <div class="xp-list">
         <article class="xp-item">
-          <div class="xp-year">2023 —<br />Aujourd'hui</div>
+          <div class="xp-year">2023 — Aujourd'hui</div>
           <div class="xp-body">
             <h3>Développeur Web Full Stack</h3>
             <p class="xp-org">Achatmat / Logidev — Plateforme LUCILLE</p>
             <p>
-              Développement d'une plateforme e-commerce B2B multi-marques. Conception
-              de modules métier (cross-docking, comptabilité, ADV, communications),
-              intégrations tierces, optimisations SQL et refactoring PHP progressif.
+              Conception et développement de modules métier sur une plateforme
+              e-commerce B2B multi-marques (cross-docking, comptabilité, ADV,
+              communications). J'assure également les intégrations avec des services
+              tiers tels que Pennylane ou les transporteurs, ainsi que la
+              modernisation progressive du code PHP hérité au fil des évolutions.
             </p>
           </div>
         </article>
 
         <article class="xp-item">
-          <div class="xp-year">2020 —<br />2023</div>
+          <div class="xp-year">2017 — 2019</div>
           <div class="xp-body">
             <h3>Formation supérieure en informatique</h3>
             <p class="xp-org">Enseignement supérieur</p>
             <p>
-              Fondamentaux du génie logiciel, algorithmique, bases de données,
-              programmation orientée objet, réseaux et architectures web.
+              Cursus fondamental en informatique : algorithmique, bases de données,
+              programmation orientée objet, réseaux et une première approche du
+              développement web.
             </p>
           </div>
         </article>
 
         <article class="xp-item">
-          <div class="xp-year">En<br />continu</div>
+          <div class="xp-year">En continu</div>
           <div class="xp-body">
             <h3>Auto-formation</h3>
             <p class="xp-org">Documentation, open source, veille</p>
             <p>
-              Lecture régulière des RFC PHP, articles techniques sur les patterns
-              modernes, exploration de projets open source pour comprendre les
-              choix d'architecture.
+              Je suis les changelogs à chaque nouvelle version de PHP, je lis les
+              retours d'expérience d'équipes qui font tourner des architectures à
+              fort trafic, et il m'arrive de plonger dans le code source de projets
+              open source pour observer les choix d'architecture retenus.
             </p>
           </div>
         </article>
@@ -495,28 +612,28 @@
         </p>
 
         <h2 class="contact-headline">
-          Construisons<br />
-          <em>quelque chose</em><br />
-          <span class="accent">ensemble.</span>
+          Racontez-<br />
+          <em>moi</em><br />
+          <span class="accent">votre projet.</span>
         </h2>
 
-        <a href="mailto:josoa@achatmat.com" class="contact-mail">
-          <span>josoa@achatmat.com</span>
+        <a href="mailto:jt.raobelina@gmail.com" class="contact-mail">
+          <span>jt.raobelina@gmail.com</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
 
         <div class="contact-links">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://josoatahina.github.io/" target="_blank" rel="noopener noreferrer">
             <span class="mono">01</span>
             <span>GitHub</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/josoa-tahina/" target="_blank" rel="noopener noreferrer">
             <span class="mono">02</span>
             <span>LinkedIn</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="cv.pdf" download>
+          <a href="Raobelina Josoa Tahina (cv).pdf" download>
             <span class="mono">03</span>
             <span>Télécharger le CV</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -538,17 +655,17 @@
       </div>
       <div class="footer-col">
         <p class="footer-label">Contact</p>
-        <a href="mailto:josoa@achatmat.com">josoa@achatmat.com</a>
+        <a href="mailto:jt.raobelina@gmail.com">jt.raobelina@gmail.com</a>
       </div>
       <div class="footer-col">
         <p class="footer-label">© <span id="year"></span></p>
-        <p>Conçu et développé sans framework.<br />HTML · CSS · JS vanilla.</p>
+        <p>Conçu et développé sans framework<br/>HTML · CSS · JS</p>
       </div>
     </div>
 
     <div class="footer-mega" aria-hidden="true">JOSOA</div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=1.0" defer></script>
 </body>
 </html>
