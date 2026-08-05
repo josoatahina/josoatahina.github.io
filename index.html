@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio de Raobelina Josoa Tahina, développeur web full stack. PHP, JavaScript, MySQL, intégrations e-commerce." />
+  <meta name="description" content="Portfolio de Raobelina Josoa Tahina, développeur web Back-end. PHP, JavaScript, MySQL, intégrations e-commerce." />
   <meta name="theme-color" content="#0e0e0e" />
-  <title>Josoa Tahina — Développeur Web Full Stack</title>
+  <title>Josoa Tahina — Développeur Web Back-end</title>
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="alternate icon" href="favicon.svg" />
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=1.0" />
+  <link rel="stylesheet" href="styles.css?v=1.1" />
 </head>
 <body>
 
@@ -25,7 +25,6 @@
   <header class="nav" id="nav">
     <div class="nav-inner">
       <a href="#top" class="nav-brand">
-        <span class="brand-glyph">✳</span>
         <span class="brand-name">Josoa<span class="brand-dot">.</span></span>
       </a>
 
@@ -88,7 +87,7 @@
           <span class="word italic">Tahina</span>
         </span>
         <span class="title-line small" data-split>
-          <span class="word">Backend</span>
+          <span class="word">Back-end</span>
           <span class="word">PHP</span>
           <span class="word italic accent">developer</span>
           <span class="word">/</span>
@@ -100,7 +99,7 @@
       <div class="hero-meta">
         <div class="hero-lead">
           <p>
-            Développeur <em>web</em> full stack, je conçois et fais évoluer des
+            Développeur <em>web</em> Back-end, je conçois et fais évoluer des
             applications métier depuis cinq ans. Aujourd'hui, je travaille sur une
             plateforme e-commerce B2B multi-marques : modules back-office,
             intégrations à des services externes et automatisations pour libérer les
@@ -130,42 +129,14 @@
         </div>
         <div class="corner-item">
           <span class="corner-label">Rôle</span>
-          <span class="corner-value">Backend PHP</span>
+          <span class="corner-value">Back-end PHP</span>
         </div>
       </div>
 
-      <a href="#marquee" class="scroll-cue" aria-label="Défiler">
+      <a href="#about" class="scroll-cue" aria-label="Défiler">
         <span>Scroll</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-    </section>
-
-    <!-- ================================================================
-         MARQUEE
-         ================================================================ -->
-    <section class="marquee" id="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <div class="marquee-content">
-          <span>PHP 8.2</span><span class="star">✳</span>
-          <span>MySQL</span><span class="star">✳</span>
-          <span>JavaScript</span><span class="star">✳</span>
-          <span>Twig</span><span class="star">✳</span>
-          <span>REST API</span><span class="star">✳</span>
-          <span>Git</span><span class="star">✳</span>
-          <span>HTML / CSS</span><span class="star">✳</span>
-          <span>Wordpress</span><span class="star">✳</span>
-        </div>
-        <div class="marquee-content">
-          <span>PHP 8.2</span><span class="star">✳</span>
-          <span>MySQL</span><span class="star">✳</span>
-          <span>JavaScript</span><span class="star">✳</span>
-          <span>Twig</span><span class="star">✳</span>
-          <span>REST API</span><span class="star">✳</span>
-          <span>Git</span><span class="star">✳</span>
-          <span>HTML / CSS</span><span class="star">✳</span>
-          <span>Wordpress</span><span class="star">✳</span>
-        </div>
-      </div>
     </section>
 
     <!-- ================================================================
@@ -237,19 +208,7 @@
       <div class="work-grid">
         <article class="work-item work-featured">
           <div class="work-visual">
-            <div class="work-graphic graphic-crossdock">
-              <div class="grid-lines"></div>
-              <div class="graphic-content">
-                <div class="graphic-truck">
-                  <div class="truck-container"></div>
-                  <div class="truck-container"></div>
-                  <div class="truck-container filled"></div>
-                </div>
-                <div class="graphic-gauge">
-                  <div class="gauge-fill"></div>
-                </div>
-              </div>
-            </div>
+            <img class="work-img" src="images/cross-docking.png" alt="Interface du module Cross-Docking" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';" />
           </div>
           <div class="work-info">
             <div class="work-meta">
@@ -272,15 +231,7 @@
 
         <article class="work-item">
           <div class="work-visual">
-            <div class="work-graphic graphic-adv">
-              <div class="graphic-bars">
-                <div class="bar" style="--h: 40%"></div>
-                <div class="bar" style="--h: 75%"></div>
-                <div class="bar" style="--h: 55%"></div>
-                <div class="bar accent" style="--h: 90%"></div>
-                <div class="bar" style="--h: 65%"></div>
-              </div>
-            </div>
+            <img class="work-img" src="images/dashboards.png" alt="Suite de tableaux de bord" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';" />
           </div>
           <div class="work-info">
             <div class="work-meta">
@@ -303,27 +254,7 @@
 
         <article class="work-item">
           <div class="work-visual">
-            <div class="work-graphic graphic-tasks">
-              <div class="task-list">
-                <div class="task-row done">
-                  <span class="task-check"></span>
-                  <span class="task-line"></span>
-                  <span class="task-badge">Fait</span>
-                </div>
-                <div class="task-row active">
-                  <span class="task-check"></span>
-                  <span class="task-line"></span>
-                  <span class="task-bell" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-                  </span>
-                </div>
-                <div class="task-row">
-                  <span class="task-check"></span>
-                  <span class="task-line short"></span>
-                  <span class="task-badge muted">À faire</span>
-                </div>
-              </div>
-            </div>
+            <img class="work-img" src="images/tasks.png" alt="Interface du module Tâches" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';" />
           </div>
           <div class="work-info">
             <div class="work-meta">
@@ -345,33 +276,7 @@
 
         <article class="work-item">
           <div class="work-visual">
-            <div class="work-graphic graphic-agenda">
-              <div class="cal-block">
-                <div class="cal-header">
-                  <span class="cal-label">Outlook</span>
-                  <span class="cal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                </div>
-                <div class="cal-grid">
-                  <span></span><span></span><span></span><span></span>
-                  <span></span><span class="cal-cell active"></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span>
-                </div>
-              </div>
-              <div class="cal-sync" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"/><path d="M21 7H8"/><path d="M7 21l-4-4 4-4"/><path d="M3 17h13"/></svg>
-              </div>
-              <div class="cal-block">
-                <div class="cal-header">
-                  <span class="cal-label">Interne</span>
-                  <span class="cal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                </div>
-                <div class="cal-grid">
-                  <span></span><span></span><span></span><span></span>
-                  <span></span><span class="cal-cell active"></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span>
-                </div>
-              </div>
-            </div>
+            <img class="work-img" src="images/agenda.png" alt="Interface du module Agenda synchronisé avec Outlook" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';" />
           </div>
           <div class="work-info">
             <div class="work-meta">
@@ -393,28 +298,7 @@
 
         <article class="work-item">
           <div class="work-visual">
-            <div class="work-graphic graphic-payments">
-              <div class="pay-stack">
-                <div class="pay-card">
-                  <span class="pay-chip"></span>
-                  <span class="pay-line"></span>
-                  <span class="pay-line short"></span>
-                </div>
-                <div class="pay-card">
-                  <span class="pay-chip"></span>
-                  <span class="pay-line"></span>
-                  <span class="pay-line short"></span>
-                </div>
-                <div class="pay-card accent">
-                  <span class="pay-chip"></span>
-                  <span class="pay-line"></span>
-                  <span class="pay-line short"></span>
-                  <span class="pay-check" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
-                  </span>
-                </div>
-              </div>
-            </div>
+            <img class="work-img" src="images/payments.png" alt="Intégrations paiement et programme de fidélité" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';" />
           </div>
           <div class="work-info">
             <div class="work-meta">
@@ -437,12 +321,8 @@
         </article>
 
         <article class="work-item work-more">
-          <div class="work-visual work-more-visual">
-            <div class="work-more-grid" aria-hidden="true">
-              <span>✳</span><span>✳</span><span>✳</span>
-              <span>✳</span><span class="accent">✳</span><span>✳</span>
-              <span>✳</span><span>✳</span><span>✳</span>
-            </div>
+          <div class="work-visual">
+            <img class="work-img" src="images/other-projects.png" alt="Autres réalisations sur mesure" loading="lazy" onerror="this.onerror=null; this.src='images/other-projects-placeholder.svg';" />
           </div>
           <div class="work-info">
             <div class="work-meta">
@@ -555,7 +435,7 @@
         <article class="xp-item">
           <div class="xp-year">2023 — Aujourd'hui</div>
           <div class="xp-body">
-            <h3>Développeur Web Full Stack</h3>
+            <h3>Développeur Web Back-end</h3>
             <p class="xp-org">Achatmat / Logidev — Plateforme LUCILLE</p>
             <p>
               Conception et développement de modules métier sur une plateforme
@@ -647,7 +527,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-col">
-        <p class="footer-with-glyph">Raobelina Josoa Tahina<br />Développeur Web Full Stack</p>
+        <p>Raobelina Josoa Tahina<br />Développeur Web Back-end</p>
       </div>
       <div class="footer-col">
         <p class="footer-label">Localisation</p>
@@ -666,6 +546,30 @@
     <div class="footer-mega" aria-hidden="true">JOSOA</div>
   </footer>
 
-  <script src="script.js?v=1.0" defer></script>
+  <button class="chat-bubble" id="chatBubble" type="button" aria-label="Josoa — cliquez pour me contacter, glissez pour me déplacer">
+    <img class="chat-bubble-photo" src="images/portrait.png" alt="Portrait de Josoa" onerror="this.onerror=null; this.src='images/portrait-placeholder.svg';" />
+    <span class="chat-bubble-badge" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </span>
+    <span class="chat-bubble-status" aria-hidden="true"></span>
+  </button>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu de l'image" hidden>
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer l'aperçu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lightbox-hint" id="lightboxHint">
+      <span>Molette pour zoomer</span>
+      <span class="sep">·</span>
+      <span>Glissez pour déplacer</span>
+      <span class="sep">·</span>
+      <span>Échap pour fermer</span>
+    </div>
+    <div class="lightbox-stage" id="lightboxStage">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    </div>
+  </div>
+
+  <script src="script.js?v=1.1" defer></script>
 </body>
 </html>
